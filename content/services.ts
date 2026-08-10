@@ -4,8 +4,8 @@ import type { Service, ServicePageContent } from "@/types/content";
 export const services: readonly Service[] = [];
 
 export const servicePages: Readonly<Record<string, ServicePageContent>> = {
-  uiux: {
-    slug: "uiux",
+  "ui-ux": {
+    slug: "ui-ux",
     metaTitle: "UI/UX Designing",
     heroTitleTop: "Uiux",
     heroTitleHighlight: "Designing",

@@ -38,7 +38,7 @@ export function WorkCarousel() {
       (current) => (current + direction + projects.length) % projects.length,
     );
   return (
-    <section className="section-shell py-20 sm:py-28 lg:py-40">
+    <section className="section-shell py-20 sm:py-28 lg:py-40" id="work">
       <div className="flex items-end justify-between">
         <div>
           <p className="eyebrow text-3xl">Work</p>

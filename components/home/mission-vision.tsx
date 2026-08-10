@@ -27,7 +27,7 @@ export function MissionVision() {
   const [active, setActive] = useState<CardKey>("mission");
 
   return (
-    <section className="section-shell py-20 sm:py-28 lg:py-40">
+    <section className="section-shell py-20 sm:py-28 lg:py-40" id="about">
       <div className="grid gap-10 lg:grid-cols-[.85fr_1.65fr] lg:items-start"><Reveal><h2 className="display-heading text-4xl sm:text-5xl">Our mission,<br />our <span className="text-brand">vission</span></h2></Reveal><div className="mt-4 grid grid-cols-6 gap-x-5 gap-y-6 opacity-80" aria-hidden="true">{Array.from({ length: 18 }, (_, index) => <i className="h-px bg-line" key={index} />)}</div></div>
       <p className="eyebrow mt-14 text-sm">Hover for more ↓</p>
       <div className="mt-8 grid gap-6 md:grid-cols-2" onMouseLeave={() => setActive("mission")}>

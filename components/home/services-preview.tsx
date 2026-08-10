@@ -8,7 +8,7 @@ import { Reveal } from "@/components/shared/reveal";
 import { cn } from "@/lib/utils";
 
 const services = [
-  ["UIUX Designing", "Create intuitive interfaces, user journeys, wireframes, prototypes, and engaging digital experiences designed to improve usability, customer satisfaction, and product success.", "/services"],
+  ["UIUX Designing", "Create intuitive interfaces, user journeys, wireframes, prototypes, and engaging digital experiences designed to improve usability, customer satisfaction, and product success.", "/services/ui-ux"],
   ["Website Design + Development", "Modern responsive websites built with performance, accessibility, SEO, and conversion optimization in mind for startups, growing businesses, and established brands.", "/services/website-development"],
   ["Branding", "Build memorable visual identities, brand systems, and digital assets that strengthen recognition, create trust, and position your business for long-term growth.", "/services/branding"],
 ] as const;
@@ -17,7 +17,7 @@ export function ServicesPreview() {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
-    <section className="section-shell py-20 sm:py-28 lg:py-40">
+    <section className="section-shell py-20 sm:py-28 lg:py-40" id="services">
       <Reveal><p className="eyebrow text-3xl">Services</p><h2 className="display-heading mt-2 text-4xl sm:text-5xl">We offer</h2></Reveal>
       <div className="mt-10">
         {services.map(([title, description, href], index) => {
