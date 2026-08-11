@@ -4,12 +4,44 @@ export type Service = {
   summary: string;
 };
 
+export type CaseStudyImage = {
+  src: string | null;
+  alt: string;
+};
+
+export type CaseStudyShowcaseSection = {
+  title: string;
+  image: CaseStudyImage;
+  description: string;
+};
+
+export type CaseStudyTimeline = {
+  image: CaseStudyImage;
+  description: string;
+};
+
 export type CaseStudy = {
   slug: string;
   title: string;
-  summary: string;
-  image: string;
-  services: readonly string[];
+  service: string;
+  category: string;
+  duration: string;
+  developmentType: string;
+  description: string;
+  heroImage: CaseStudyImage;
+  contentImages: readonly CaseStudyImage[];
+  productShots: CaseStudyImage;
+  showcaseSections: readonly CaseStudyShowcaseSection[];
+  timeline: CaseStudyTimeline;
+};
+
+export type RecentWorkItem = {
+  title: string;
+  description: string;
+  image: {
+    src: string;
+    alt: string;
+  };
 };
 
 export type TeamMember = {

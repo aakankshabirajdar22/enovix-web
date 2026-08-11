@@ -39,7 +39,7 @@ const team: TeamMember[] = [
     lastName: "Birajdar",
     bio: "Turning designs into fast websites using clean code and modern web development practices.",
     role: "Development Team",
-    image: null,
+    image: "/images/team/Aakanksha.png",
   },
   {
     firstName: "Suyash",
