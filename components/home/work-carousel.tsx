@@ -22,11 +22,18 @@ const projects = [
     image: "/images/work/IVL.png",
   },
   {
-    title: "Digital Experience",
+    title: "Indipath Website",
     summary:
-      "A focused, conversion-first digital experience created for a forward-looking business.",
-    tags: ["Strategy", "UIUX", "Web Design"],
-    image: null,
+      "Lorem ipsum dolor sit amet consectetur. Odio sed ac sed facilisis amet. Aliquam cursus donec diam lacus. Vitae integer viverra curabitur aliquam lectus egestas platea egestas lectus. Vulputate in at tempor eros nunc purus mi risus.",
+    tags: [
+      "UIUX",
+      "SEO",
+      "Branding",
+      "Logo Design",
+      "Web Design",
+      "Web Development",
+    ],
+    image: "/images/work/indipath.png",
   },
 ] as const;
 
@@ -42,7 +49,7 @@ export function WorkCarousel() {
       <div className="flex items-end justify-between">
         <div>
           <p className="eyebrow text-3xl">Work</p>
-          <h2 className="display-heading mt-2 text-4xl sm:text-5xl">
+          <h2 className="display-heading heading-2 mt-2">
             We&apos;ve done
           </h2>
         </div>

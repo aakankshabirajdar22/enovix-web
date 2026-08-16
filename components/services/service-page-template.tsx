@@ -2,6 +2,7 @@ import { FaqSection } from "@/components/home/faq-section";
 import { ServicesContact } from "@/components/services/services-contact";
 import { ServicesHero } from "@/components/services/services-hero";
 import { ServicesProcess } from "@/components/services/services-process";
+import { DoubleLining } from "@/components/shared/double-lining";
 import type { ServicePageContent } from "@/types/content";
 
 export function ServicePageTemplate({ content }: Readonly<{ content: ServicePageContent }>) {
@@ -10,6 +11,9 @@ export function ServicePageTemplate({ content }: Readonly<{ content: ServicePage
       <ServicesHero image={content.heroImage} titleHighlight={content.heroTitleHighlight} titleTop={content.heroTitleTop} />
       <ServicesProcess steps={content.process} />
       <FaqSection defaultOpenFirst items={content.faq} />
+      <div className="section-shell py-10 sm:py-14 lg:py-16">
+        <DoubleLining />
+      </div>
       <ServicesContact />
     </>
   );

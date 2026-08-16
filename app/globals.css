@@ -44,9 +44,15 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-body);
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 15px;
+  line-height: 1.6;
   text-rendering: optimizeLegibility;
+}
+
+@media (min-width: 640px) {
+  body {
+    font-size: 16px;
+  }
 }
 
 ::selection {
@@ -62,7 +68,7 @@ body {
 
   .display-heading {
     font-family: var(--font-heading);
-    font-weight: 900;
+    font-weight: 400;
     letter-spacing: var(--tracking-heading);
     line-height: 0.94;
     text-transform: uppercase;
@@ -79,15 +85,38 @@ body {
 
   .body-copy {
     color: var(--muted);
-    line-height: 1.55;
+    line-height: 1.6;
+  }
+
+  .heading-1 {
+    font-size: 2.375rem;
+  }
+
+  .heading-2 {
+    font-size: 1.875rem;
+  }
+
+  .heading-3 {
+    font-size: 1.625rem;
   }
 
   .clip-panel {
-    clip-path: polygon(1.25rem 0, 100% 0, 100% calc(100% - 1.25rem), calc(100% - 1.25rem) 100%, 0 100%, 0 1.25rem);
+    clip-path: polygon(
+      1.25rem 0,
+      100% 0,
+      100% calc(100% - 1.25rem),
+      calc(100% - 1.25rem) 100%,
+      0 100%,
+      0 1.25rem
+    );
   }
 
   .grid-divider {
-    background-image: repeating-linear-gradient(90deg, var(--line) 0 3.75rem, transparent 3.75rem 4.75rem);
+    background-image: repeating-linear-gradient(
+      90deg,
+      var(--line) 0 3.75rem,
+      transparent 3.75rem 4.75rem
+    );
     height: 1px;
   }
 }
@@ -95,5 +124,33 @@ body {
 @media (min-width: 768px) {
   .section-shell {
     width: min(100% - 6rem, 80rem);
+  }
+}
+
+@media (min-width: 640px) {
+  .heading-1 {
+    font-size: 2.8125rem;
+  }
+
+  .heading-2 {
+    font-size: 2.1875rem;
+  }
+
+  .heading-3 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heading-1 {
+    font-size: 4.25rem;
+  }
+
+  .heading-2 {
+    font-size: 2.5rem;
+  }
+
+  .heading-3 {
+    font-size: 1.875rem;
   }
 }

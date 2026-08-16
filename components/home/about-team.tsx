@@ -55,7 +55,7 @@ export function AboutTeam() {
     <section className="section-shell py-20 sm:py-28 lg:py-40">
       <div className="grid gap-8 lg:grid-cols-[.8fr_1.4fr]">
         <Reveal>
-          <h2 className="display-heading text-4xl sm:text-5xl">
+          <h2 className="display-heading heading-2">
             More
             <br />
             about
@@ -101,7 +101,7 @@ export function AboutTeam() {
                   {member.lastName}
                 </h3>
                 <div className="text-right">
-                  <p className="body-copy max-w-[10rem] text-xs text-muted">
+                  <p className="body-copy max-w-[11rem] text-sm text-muted">
                     {member.bio}
                   </p>
                   <p className="mt-3 text-xs text-brand">{member.role}</p>

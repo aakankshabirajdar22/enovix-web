@@ -10,10 +10,10 @@ export function CaseStudyShowcase({ study }: CaseStudyShowcaseProps) {
       <div className="section-shell mt-16 grid gap-14 sm:gap-16 lg:gap-20">
         {study.showcaseSections.map((item, index) => (
           <div className="grid gap-6 sm:grid-cols-[.6fr_1.4fr] sm:items-start sm:gap-10" key={index}>
-            <h3 className="display-heading text-2xl sm:text-3xl">{item.title}</h3>
+            <h3 className="display-heading heading-3">{item.title}</h3>
             <div>
               <CaseStudyMedia aspectRatio="3/2" contained={false} image={item.image} tone="muted" />
-              <p className="body-copy mt-4 max-w-xl text-xs leading-relaxed text-muted">{item.description}</p>
+              <p className="body-copy mt-4 max-w-xl leading-relaxed text-muted">{item.description}</p>
             </div>
           </div>
         ))}

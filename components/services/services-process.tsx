@@ -10,8 +10,8 @@ export function ServicesProcess({ steps }: ServicesProcessProps) {
           className="grid gap-3 sm:grid-cols-[1fr_2fr] sm:items-start sm:gap-8"
           key={`${step.title}-${index}`}
         >
-          <h2 className="display-heading text-3xl sm:text-4xl">{step.title}</h2>
-          <p className="body-copy max-w-xl text-xs leading-relaxed text-muted">
+          <h2 className="display-heading heading-2">{step.title}</h2>
+          <p className="body-copy max-w-xl leading-relaxed text-muted">
             {step.description}
           </p>
         </div>

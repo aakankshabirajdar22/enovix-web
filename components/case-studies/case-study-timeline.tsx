@@ -10,7 +10,7 @@ export function CaseStudyTimeline({ study }: CaseStudyTimelineProps) {
         <h2 className="font-display text-2xl font-black sm:text-3xl">Timeline</h2>
         <div>
           <CaseStudyMedia aspectRatio="16/9" contained={false} image={study.timeline.image} tone="light" />
-          <p className="body-copy mt-4 max-w-xl text-xs leading-relaxed">{study.timeline.description}</p>
+          <p className="body-copy mt-4 max-w-xl leading-relaxed">{study.timeline.description}</p>
         </div>
       </div>
     </section>

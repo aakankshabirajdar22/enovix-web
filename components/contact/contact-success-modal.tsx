@@ -61,7 +61,7 @@ export function ContactSuccessModal({ isOpen, onClose }: ContactSuccessModalProp
               <Check className="text-brand" size={30} strokeWidth={2.25} />
             </div>
 
-            <h2 className="display-heading mt-6 text-center text-2xl leading-tight sm:text-3xl">
+            <h2 className="display-heading heading-3 mt-6 text-center leading-tight">
               Request sent<br /><span className="text-brand">successfully</span>
             </h2>
 

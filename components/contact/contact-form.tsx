@@ -73,7 +73,7 @@ export function ContactForm() {
   return (
     <div className="clip-panel bg-[#99bd00] p-px">
     <form className="clip-panel grid gap-5 bg-background p-6 sm:p-9" noValidate onSubmit={handleSubmit}>
-      <h3 className="display-heading text-3xl text-brand sm:text-4xl">Connect with us now !</h3>
+      <h3 className="display-heading heading-3 text-brand">Connect with us now !</h3>
       <div className="grid gap-4 sm:grid-cols-2">
         <label className="grid gap-1 text-xs text-muted">
           First Name

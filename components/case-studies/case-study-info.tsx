@@ -19,7 +19,7 @@ export function CaseStudyInfo({ study }: CaseStudyInfoProps) {
           </div>
         ))}
       </div>
-      <p className="body-copy max-w-2xl text-sm leading-relaxed text-muted">{study.description}</p>
+      <p className="body-copy max-w-2xl leading-relaxed text-muted">{study.description}</p>
     </section>
   );
 }

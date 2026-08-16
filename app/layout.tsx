@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import localFont from "next/font/local";
 
 import "./globals.css";
+import { WhatsAppButton } from "@/components/shared/whatsapp-button";
 import { siteConfig } from "@/content/site";
 
 const oughter = localFont({
@@ -25,6 +26,9 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   applicationName: siteConfig.name,
+  icons: {
+    icon: [{ url: "/images/footer_icon.png", type: "image/png" }],
+  },
   openGraph: {
     type: "website",
     siteName: siteConfig.name,
@@ -37,7 +41,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <html className={`${oughter.variable} ${bricolage.variable}`} lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <WhatsAppButton />
+      </body>
     </html>
   );
 }
